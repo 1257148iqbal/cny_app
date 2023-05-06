@@ -1,0 +1,22 @@
+/*
+     Title: Constent for PurchaseOrder
+     Description: Constent for PurchaseOrder
+     Author: Iqbal Hossain
+     Date: 22-August-2022
+     Modified: 22-August-2022
+*/
+
+export const FETCH_PURCHASE_ORDER = 'FETCH_PURCHASE_ORDER';
+
+export const FETCH_ALL_PO_BY_SUPPLIER_ORDER = 'FETCH_ALL_PO_BY_SUPPLIER_ORDER';
+export const PURCHASE_ORDER_CHANGE_PO_SUPPLIER_ORDER = 'PURCHASE_ORDER_CHANGE_PO_SUPPLIER_ORDER';
+
+
+export const FETCH_BUYER_PURCHASE_ORDER = 'FETCH_BUYER_PURCHASE_ORDER';
+export const BUYER_CHANGE_PURCHASE_ORDER = 'BUYER_CHANGE_PURCHASE_ORDER';
+
+
+export const FETCH_STYLE_PURCHASE_ORDER = 'FETCH_STYLE_PURCHASE_ORDER';
+export const STYLE_CHANGE_PURCHASE_ORDER = 'STYLE_CHANGE_PURCHASE_ORDER';
+
+export const LOADING = 'LOADING';

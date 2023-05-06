@@ -1,0 +1,11 @@
+export const GET_ROLES = 'GET_ROLES';
+export const GET_ROLES_BY_QUERY = 'GET_ROLES_BY_QUERY';
+export const GET_ROLE_BY_ID = 'GET_ROLE_BY_ID';
+export const ADD_ROLE = 'ADD_ROLE';
+export const UPDATE_ROLE = 'UPDATE_ROLE';
+export const DELETE_ROLE = 'DELETE_ROLE';
+export const DELETE_ROLES_BY_RANGE = 'DELETE_ROLES_BY_RANGE';
+export const SELECTED_ROLE_NULL = 'SELECTED_ROLE_NULL';
+
+export const OPEN_ROLE_SIDEBAR = 'OPEN_ROLE_SIDEBAR';
+export const DROP_DOWN_ROLES = 'DROP_DOWN_ROLES';

@@ -1,0 +1,20 @@
+// Buyer App
+// ========================================================================
+
+@import "../../base/pages/merchandising-buyer.scss";
+
+.buyer-list-dataTable {
+  header {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 482px) {
+  .buyer-list-dataTable {
+    header .actions-right {
+      select {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../@core/scss/base/components/include';
+$border-color: rgb(184, 179, 179);
+
+.erp-custom-tabs {
+  .nav {
+    border-radius: 0%;
+  }
+  .nav.nav-tabs {
+    border-bottom: 0.1rem solid $border-color;
+    li a.active {
+      color: rgb(12, 118, 109) !important;
+      border-top: 0.1rem solid $border-color;
+      border-right: 0.1rem solid $border-color;
+      border-left: 0.1rem solid $border-color;
+      background-color: #ffffff;
+      margin-bottom: -2px;
+    }
+    li a::after {
+      background: none !important;
+      // width: 30%;
+      // display: flex;
+      // justify-content: center;
+    }
+  }
+}

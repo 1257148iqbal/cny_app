@@ -1,0 +1,62 @@
+// ================================================================================================
+//   File Name: app-chat-area.scss
+//   Description: SCC file for chat area application page.
+//   ----------------------------------------------------------------------------------------------
+//   Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//   Author: PIXINVENT
+//   Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// @import "../bootstrap-extended/include"; // Bootstrap includes
+@import "../../../../@core/scss/base/bootstrap-extended/include";
+// @import "../components/include"; // Components includes
+@import "../../../../@core/scss/base/components/include";
+
+// @import "../core/colors/palette-variables";
+@import "../../../../@core/scss/base/core/colors/palette-variables.scss";
+
+@import "bootstrap/scss/mixins/_gradients";
+@import "bootstrap/scss/mixins/gradients";
+
+//Variables
+$chat-image-back-color: #f2f0f7;
+$chat-head-footer-height: 65px;
+$chat-widget-head-footer-height: 56px;
+$chat-widget-height: 590px;
+
+// User chat window css
+.form-app-window {
+  // User chats
+  .form-scroll-section {
+    background-color: $chat-image-back-color;
+    padding: 1rem;
+    position: relative;
+    height: 100%;
+    .avatar {
+      img {
+        border: 2px solid $white;
+      }
+    }
+  }
+  // Chat area css
+  .chats {
+    .chat-avatar {
+      float: right;
+    }
+  }
+}
+
+// Chat Widget
+.form-widget {
+  .card-header {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .form-app-window {
+    // User chats
+    .form-scroll-section {
+      background-color: $body-bg;
+      height: $chat-widget-height;
+    }
+  }
+}

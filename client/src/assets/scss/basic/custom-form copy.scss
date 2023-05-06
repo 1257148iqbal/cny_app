@@ -1,0 +1,475 @@
+@import '../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../@core/scss/base/components/include';
+.custom-form-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  .custom-form-value-label {
+    font-weight: bolder;
+  }
+  .custom-form-label {
+    width: 30%;
+    font-weight: bolder;
+  }
+  .custom-form-colons {
+    width: 5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group {
+    width: 65%;
+  }
+  .custom-form-group.name {
+    width: 65%;
+    display: flex;
+    input:first-child {
+      width: 65%;
+      margin-right: 0.5rem;
+      // border: none;
+      // border-radius: 0;
+      // border-bottom: 1px solid red;
+    }
+    input:last-child {
+      width: 35%;
+    }
+  }
+  .custom-form-group.address {
+    width: 70%;
+    display: flex;
+    input {
+      width: 50%;
+      margin-right: 0.5rem;
+    }
+    input:last-child {
+      margin-right: 0rem;
+      // border: none;
+      // border-radius: 0;
+      // border-bottom: 1px solid red;
+    }
+  }
+  .custom-form-label.note {
+    width: 14%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.note {
+    width: 2.5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.note {
+    width: 83.5%;
+  }
+  .custom-form-label.remarks {
+    width: 10%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.remarks {
+    width: 1.5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.remarks {
+    width: 89.5%;
+  }
+  @media only screen and (max-width: 992px) {
+    .custom-form-label.remarks {
+      width: 25.2%;
+      font-weight: bolder;
+    }
+    .custom-form-colons.remarks {
+      width: 3.5%;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .custom-form-group.remarks {
+      width: 71.3%;
+    }
+  }
+  .custom-form-label.col-div-6 {
+    width: 14.8%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-6 {
+    width: 2.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-6 {
+    width: 83%;
+  }
+
+  .custom-form-label.col-div-5 {
+    width: 17.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-5 {
+    width: 3.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-5 {
+    width: 79.4%;
+  }
+
+  .custom-form-label.col-div-4 {
+    width: 22.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-4 {
+    width: 3.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-4 {
+    width: 74.4%;
+  }
+
+  .custom-form-label.col-div-4-style-remarks {
+    width: 18.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-4-style-remarks {
+    width: 3.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-4-style-remarks {
+    width: 76.4%;
+  }
+
+  .custom-form-label.col-div-6.costings-remarks {
+    width: 12.7%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-6.costings-remarks {
+    width: 2.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-6.costings-remarks {
+    width: 85.2%;
+  }
+
+  .custom-form-label.col-div-8.costing {
+    width: 14.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-8.costing {
+    width: 2.3%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-8.costing {
+    width: 83.2%;
+  }
+  .custom-form-label.col-div-9 {
+    width: 9.6%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-9 {
+    width: 1.5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-9 {
+    width: 88.9%;
+  }
+
+  .custom-form-label.col-div-3 {
+    width: 29.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-3 {
+    width: 4.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-3 {
+    width: 70.4%;
+  }
+  .custom-form-label.col-div-3-style {
+    width: 22.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-3-style {
+    width: 4.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-3-style {
+    width: 70.4%;
+  }
+  .custom-form-label.col-div-3-style-pp {
+    width: 14.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-3-style-pp {
+    width: 2.5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-3-style-pp {
+    width: 83%;
+  }
+
+  .custom-form-label.col-div-3.costing {
+    width: 49.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-3.costing {
+    width: 8.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-3.costing {
+    width: 42.4%;
+  }
+
+  ///
+  .custom-form-label.col-div-2 {
+    width: 65.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-2 {
+    width: 8.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-2 {
+    ///
+  }
+
+  .custom-form-label.col-div-12 {
+    width: 14.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.col-div-12 {
+    width: 3.1%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.col-div-12 {
+    width: 82.4%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .custom-form-label.col-div-6 {
+      width: 25.2%;
+      font-weight: bolder;
+    }
+    .custom-form-colons.col-div-6 {
+      width: 3.5%;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .custom-form-group.col-div-6 {
+      width: 71.3%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .custom-form-label.col-div-12 {
+      width: 32.2%;
+      font-weight: bolder;
+    }
+    .custom-form-colons.col-div-12 {
+      width: 3.5%;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .custom-form-group.col-div-12 {
+      width: 64.3%;
+    }
+  }
+
+  .custom-form-input-group {
+    width: 65%;
+    display: flex;
+    .custom-input-group-prepend {
+      width: 48%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append {
+      width: 50%;
+    }
+    .custom-input-group-prepend.inside-btn {
+      width: 88%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append.inside-btn {
+      width: 10%;
+      text-align: right;
+      .btn.btn-sm.btn-icon {
+        padding: 0.39rem;
+      }
+      .btn-outline-secondary {
+        border: 1px solid #d8d6de !important;
+      }
+    }
+    .custom-input-group-prepend.inside-switch {
+      width: 78%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append.inside-switch {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: $success;
+      }
+    }
+
+    .custom-input-group-prepend.inside-number {
+      width: 30%;
+    }
+    .custom-input-group-append.inside-dropdown {
+      width: 70%;
+    }
+    .custom-input-group-prepend.costing-id {
+      width: 40%;
+    }
+    .custom-input-group-middle.costing-id-label {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      font-size: smaller;
+      font-weight: bold;
+    }
+    .custom-input-group-append.costing-id {
+      display: flex;
+      align-items: center;
+      width: 35%;
+      font-size: smaller;
+      font-weight: bold;
+    }
+  }
+  .custom-form-input-group.style {
+    width: 100%;
+    display: flex;
+
+    .custom-input-group-prepend.inside-btn {
+      width: 95%;
+      margin-right: 1%;
+    }
+    .custom-input-group-append.inside-btn {
+      width: 4%;
+      text-align: right;
+      .btn.btn-sm.btn-icon {
+        padding: 0.39rem;
+      }
+      .btn-outline-secondary {
+        border: 1px solid #d8d6de !important;
+      }
+    }
+  }
+  .custom-form-input-group.style-col-div-3 {
+    width: 100%;
+    display: flex;
+
+    .custom-input-group-prepend.inside-btn {
+      width: 97%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append.inside-btn {
+      width: 1%;
+      text-align: right;
+      .btn.btn-sm.btn-icon {
+        padding: 0.39rem;
+      }
+      .btn-outline-secondary {
+        border: 1px solid #d8d6de !important;
+      }
+    }
+  }
+
+  //For Photo Upload Start
+  .image-main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-container {
+      // display: block;
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: fill;
+      }
+    }
+    .image-overlay {
+      position: absolute;
+      padding: 0.2rem;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: rgba(99, 99, 99, 0.5);
+    }
+  }
+  .image-main-container:hover .image-overlay {
+    opacity: 1;
+  }
+  .image-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  //Photo Upload End
+}
+.amount-form-section {
+  box-sizing: border-box;
+  border: 0.15 solid grey;
+  padding: 1rem 5rem;
+  box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.46);
+
+  .custom-form-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: red;
+    margin-bottom: 0.5rem;
+    .custom-form-label {
+      width: 25%;
+      font-weight: bolder;
+    }
+    .custom-form-colons {
+      width: 5%;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .custom-form-group {
+      width: 70%;
+    }
+  }
+}
+
+.custom-form-box-main {
+  cursor: pointer;
+  width: 100%;
+  .form-box {
+    border: 0.2rem solid $border-color;
+    padding: 1rem;
+    p {
+      font-size: small;
+      font-weight: 500;
+      line-height: 1rem;
+    }
+    p.name {
+      font-weight: bolder;
+    }
+    p.details-list {
+      margin-bottom: 7px;
+    }
+  }
+}

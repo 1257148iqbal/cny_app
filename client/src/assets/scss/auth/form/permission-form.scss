@@ -1,0 +1,59 @@
+@import '../../@core/scss/base/bootstrap-extended/include';
+@import '../../@core/scss/base/components/include';
+.permission {
+  // min-height: 500px;
+  .nav-link.active:after {
+    content: '';
+  }
+
+  .nav-link {
+    background-color: white;
+    color: #7367f0;
+    box-sizing: border-box;
+    font-weight: bolder;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
+    list-style-type: none;
+    border-bottom: 1px solid #ebe9f1 !important;
+  }
+
+  .nav-link.active {
+    color: white;
+    background-color: #7367f0;
+    //box-shadow: inset 0px 0px 15.3px 2.7px rgba(0, 0, 0, 0.21);
+    z-index: 0;
+  }
+  // .nav-link.active::after {
+  //   color: red;
+  //   font-size: 25px;
+  //   background-color: red !important;
+  // }
+
+  .nav-vertical {
+    background-color: #fcfffd;
+    border: 1px solid #ebe9f1 !important;
+
+    .module {
+      background-color: chocolate;
+      margin-right: 0px !important;
+    }
+  }
+  .item {
+    background-color: red;
+  }
+  .tab-content {
+    height: 100%;
+    .tab-pane.active {
+      // background-color: aqua;
+      padding: 1.2rem;
+
+      border-left: 1px solid #ebe9f1 !important;
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+}

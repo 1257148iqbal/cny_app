@@ -1,0 +1,23 @@
+$color: red;
+$background-color: white;
+
+@mixin text-color {
+  font-size: 50px;
+}
+
+@mixin bordered($width, $radiux) {
+  border: $width solid;
+  border-radius: $radiux;
+}
+
+.button {
+  color: $color;
+  background-color: $background-color;
+}
+
+.new-button {
+  @include text-color();
+  @include bordered(15px, 50px);
+  @extend .button;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

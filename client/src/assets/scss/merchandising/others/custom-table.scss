@@ -1,0 +1,265 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+
+.custom-table {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    // overflow-y: initial;
+  }
+
+  th,
+  td {
+    // text-align: center;
+    min-width: 85px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  th,
+  td.sl {
+    min-width: 10px;
+    text-align: center;
+  }
+  th,
+  td.action {
+    min-width: 20px;
+    text-align: center;
+  }
+  .custom-control {
+    z-index: 0;
+  }
+  tbody {
+    margin-bottom: 500px;
+  }
+  .form-control:disabled {
+    background-color: ghostwhite;
+  }
+}
+
+.item-segment-custom-table {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    max-height: 400px;
+    // overflow-y: initial;
+  }
+  thead {
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff; // any bg-color to overlap
+  }
+  th,
+  td {
+    min-width: 105px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  th,
+  td.sl {
+    min-width: 10px;
+    text-align: center;
+  }
+  td.action {
+    min-width: 20px;
+    text-align: center;
+  }
+  .custom-control {
+    z-index: 0;
+  }
+  .custom-control {
+    z-index: 0;
+  }
+}
+.costing-custom-table {
+  width: 100%;
+  .table-responsive {
+    font-size: small;
+    font-weight: 400;
+    width: 100%;
+    max-height: 175px;
+    min-height: 175px;
+    // overflow-y: initial;
+  }
+  thead {
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+    z-index: 1;
+    //  background: #fff; // any bg-color to overlap
+  }
+  th,
+  td {
+    min-width: 105px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  th,
+  td.sl {
+    min-width: 10px;
+    text-align: center;
+  }
+  td.action {
+    min-width: 20px;
+    text-align: center;
+  }
+  .custom-control {
+    z-index: 0;
+  }
+}
+.item-sub-group-custom-table {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    max-height: 400px;
+    // overflow-y: initial;
+  }
+  thead {
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff; // any bg-color to overlap
+  }
+  th,
+  td {
+    min-width: 105px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .custom-control {
+    z-index: 0;
+  }
+  th,
+  td.sl {
+    min-width: 10px;
+    text-align: center;
+  }
+  th,
+  td.action {
+    min-width: 20px;
+    text-align: center;
+  }
+}
+.item-segment-value-custom-table {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    max-height: 400px;
+    // overflow-y: initial;
+  }
+  thead {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0;
+    // z-index: 1;
+  }
+  th,
+  td {
+    // min-width: 105px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .delete-btn {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .delete-btn :hover {
+    cursor: pointer;
+    background-color: rgba(63, 250, 73, 0.2);
+  }
+}
+
+.custom-table-color-selection {
+  width: 100%;
+
+  .table-responsive {
+    width: 100%;
+  }
+  th {
+    min-width: 90px;
+    padding: 1px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  td {
+    .overflow-div {
+      height: 275px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.custom-table-color-size {
+  width: 100%;
+  position: relative;
+  .table-responsive {
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: center;
+    min-width: 80px;
+    padding: 2px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+.custom-table-inside-list {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    // overflow-y: initial;
+  }
+
+  th,
+  td {
+    // text-align: center;
+    min-width: 85px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}

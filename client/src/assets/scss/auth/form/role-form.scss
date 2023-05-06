@@ -1,0 +1,50 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+.custom-form-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  .custom-form-value-label {
+    font-weight: bolder;
+  }
+  .custom-form-label {
+    width: 35%;
+    font-weight: bolder;
+  }
+  .custom-form-colons {
+    width: 5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group {
+    width: 60%;
+  }
+
+  .custom-form-input-group {
+    width: 60%;
+    display: flex;
+    .custom-input-group-prepend {
+      width: 48%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append {
+      width: 50%;
+    }
+    .custom-input-group-prepend.inside-btn {
+      width: 87%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append.inside-btn {
+      width: 11%;
+      text-align: right;
+      display: flex;
+      .btn.btn-sm.btn-icon {
+        padding: 0.39rem;
+      }
+      .btn-outline-secondary {
+        border: 1px solid #d8d6de !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../@core/scss/base/components/include";
+.app-slider-main {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  z-index: 1032;
+  background-color: rgba(0, 0, 0, 0.5);
+  .app-slider {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed !important;
+    animation: animateleft 0.4s;
+    width: 300px;
+    z-index: 9999;
+    opacity: 1 !important;
+    .card {
+      bottom: 0;
+      top: 0;
+      height: 100%;
+      opacity: 1 !important;
+      z-index: 9999 !important;
+    }
+    .module-col {
+      // background-color: red;
+      cursor: pointer;
+      font-weight: bolder;
+      padding: 10px 5px;
+      margin-bottom: 1.2rem;
+    }
+    .module-col:hover {
+      // background-color: rgba(241, 241, 241, 0.6);
+      background-color: rgba(219, 219, 219, 0.4);
+      color: #6e6b7b;
+      padding-left: 26px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      transform: translateX(0%);
+      border-radius: 5px 5px 5px 5px;
+
+      font-weight: bolder;
+      padding: 10px 5px;
+      //  background: transparent;
+      transition: 0.5s;
+      box-shadow: 8px 4px 13px 0px rgba(222, 226, 230, 0.4);
+      -webkit-box-shadow: 8px 4px 13px 0px rgba(222, 226, 230, 0.4);
+      -moz-box-shadow: 8px 4px 13px 0px rgba(222, 226, 230, 0.4);
+      .module-label {
+        cursor: pointer;
+      }
+    }
+    .module-avatar {
+      //  padding: 5px;
+      margin: 0px 15px;
+    }
+
+    @keyframes animateleft {
+      from {
+        left: -300px;
+        opacity: 0;
+      }
+      to {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+.module-grid {
+  cursor: pointer;
+}
+.module-grid:hover {
+  color: #02205f;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+@import "../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../@core/scss/base/components/include";
+
+.erp-custom-tab-control {
+  .nav {
+    border-radius: 0;
+    border-bottom: 2px solid $border-color;
+  }
+  .nav-tabs {
+    .nav-item {
+      margin-bottom: -2px;
+      .nav-link {
+        padding: 0 0 0.6rem 0rem;
+        margin-right: 1rem;
+      }
+      .nav-link.active::after {
+        background-color: $primary !important;
+        height: 2px;
+      }
+    }
+  }
+}

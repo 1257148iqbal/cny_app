@@ -1,0 +1,30 @@
+@import '../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../@core/scss/base/components/include';
+
+.active-archive-btn-box {
+  margin-bottom: 2px;
+  margin-right: 12px;
+
+  .active-archive-btn {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid $success !important;
+    border-radius: 0%;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  .active-archive-btn:hover {
+    background-color: rgb(242, 238, 238);
+    border-bottom: 2px solid $primary !important;
+  }
+}
+
+.consumption-packaging-checkbox {
+  margin: 8px;
+  //border: solid black 0.1rem;
+  // padding: 0.2rem;
+  // ::after {
+  //   content: '  |';
+  // }
+}

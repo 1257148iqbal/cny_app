@@ -1,0 +1,62 @@
+@import "../../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../../@core/scss/base/components/include";
+
+.custom-collapse {
+  width: 100%;
+
+  // background-color: $white;
+  z-index: 5;
+  position: relative;
+  top: 36px;
+  height: auto;
+
+  transition: right 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+  backface-visibility: hidden;
+  // border-left: 1px solid rgba($black, 0.05);
+
+  // &.open {
+  //   box-shadow: 0 15px 30px 0 rgba($black, 0.11),
+  //     0 5px 15px 0 rgba($black, 0.08);
+  //   right: 0;
+  // }
+
+  // customizer toggle icon
+  .custom-collapse-toggle {
+    display: block;
+    box-shadow: -3px 0px 8px rgba($black, 0.1);
+    position: absolute;
+    top: 60px;
+    width: auto;
+    height: 38px;
+    left: -60px;
+    text-align: center;
+    // line-height: 40px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+  .inner-border {
+    border: 20px solid black;
+    box-shadow: inset 0px 0px 0px 10px red;
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+  }
+}
+
+.active-btn-color {
+  // -webkit-box-shadow: 5px -3px 5px 0px rgba(113, 102, 240, 0.75);
+  // -moz-box-shadow: 5px -3px 5px 0px rgba(113, 102, 240, 0.75);
+  // // box-shadow: 5px -3px 5px 0px rgba(113, 102, 240, 0.75);
+  // -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+  //   rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  // box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+  //   rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+  // padding: 5px 10px 5px 10px;
+  -webkit-box-shadow: inset 0px 0px 7px 1px rgba(60, 184, 116, 0.62);
+  box-shadow: inset 0px 0px 7px 1px rgba(60, 184, 116, 0.62);
+}
+
+.inactive-btn-color {
+  // padding: 5px 10px 5px 10px;
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(134, 123, 241, 1);
+  box-shadow: 3px 3px 5px 1px rgba(134, 123, 241, 1);
+}

@@ -1,0 +1,637 @@
+@import '../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../@core/scss/base/components/include';
+
+.t-react-dataTable {
+  border-radius: 0;
+  min-height: 300px !important;
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      min-height: 0;
+      height: 28px;
+
+      .rdt_TableCol {
+        padding: 0.72rem 1.5rem;
+        border: solid black 0.012rem;
+        resize: horizontal;
+        overflow: auto;
+        .rdt_TableCol_Sortable {
+          color: $body-color;
+          font-weight: bold;
+          font-style: 0.857rem;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          &:hover {
+            color: $body-color;
+          }
+        }
+      }
+    }
+    .rdt_TableHeadRow::after {
+      content: attr(input);
+    }
+  }
+
+  .rdt_TableBody {
+    border: 1px solid;
+    border-color: $border-color;
+    .rdt_TableRow {
+      .rdt_TableCell {
+        min-height: 30px;
+        padding: 0.62rem 1.5rem;
+        border: solid black 0.012rem;
+
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .hlidmt {
+    background-color: $white;
+    padding-right: 0px;
+  }
+  .hlidmt input {
+    margin-left: 0.4rem;
+  }
+}
+.react-dataTable {
+  border-radius: 0;
+  min-height: 300px !important;
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      background-color: $data-table-head-bg;
+
+      min-height: 0;
+      height: 28px;
+
+      .rdt_TableCol {
+        padding: 0.72rem 1.5rem;
+        .rdt_TableCol_Sortable {
+          color: $body-color;
+          font-weight: bold;
+          font-style: 0.857rem;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          &:hover {
+            color: $body-color;
+          }
+        }
+      }
+    }
+    .rdt_TableHeadRow::after {
+      content: attr(input);
+    }
+  }
+
+  .rdt_TableBody {
+    border: 1px solid;
+    border-color: $border-color;
+    .rdt_TableRow {
+      .rdt_TableCell {
+        min-height: 30px;
+        padding: 0.62rem 1.5rem;
+
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .hlidmt {
+    background-color: $white;
+    padding-right: 0px;
+  }
+  .hlidmt input {
+    margin-left: 0.4rem;
+  }
+}
+.react-custom-dataTable {
+  border-radius: 0;
+  min-height: 300px !important;
+
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      background-color: $data-table-head-bg;
+      //min-height: 0;
+      min-height: 28px;
+      .rdt_TableCol {
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        padding: 0.12rem 0.5rem;
+        .rdt_TableCol_Sortable {
+          color: $body-color;
+          font-weight: bold;
+          font-style: 0.857rem;
+          font-size: 0.85rem;
+
+          // letter-spacing: 0.5px;
+          // text-transform: uppercase;
+          &:hover {
+            color: $body-color;
+          }
+          // span {
+          //   padding-left: 1rem;
+          // }
+        }
+      }
+    }
+    .dVifjY {
+      border-left: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  .rdt_TableBody {
+    // border: 1px solid;
+    // border-color: $border-color;
+    .rdt_TableRow {
+      border-bottom: 1px solid $border-color;
+      .rdt_TableCell {
+        // border: 1px solid;
+        // border-color: $border-color;
+        min-height: 30px;
+        padding: 0.12rem 0.5rem;
+        //  font-weight: bold;
+        font-size: small;
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+      .cmbwYX {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell:first-child {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell {
+        border-right: 1px solid $border-color;
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .hlidmt {
+    background-color: $white;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .hlidmt input {
+    margin-left: 0.4rem;
+  }
+  .hlidmt span {
+    display: flex;
+    align-items: center;
+    margin-left: 0.4rem;
+  }
+}
+.react-custom-dataTable-other {
+  border-radius: 0;
+  min-height: 100px !important;
+
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      background-color: $data-table-head-bg;
+      //min-height: 0;
+      min-height: 28px;
+      .rdt_TableCol {
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        padding: 0.12rem 0.5rem;
+        .rdt_TableCol_Sortable {
+          color: $body-color;
+          font-weight: bold;
+          font-style: 0.857rem;
+          font-size: 0.85rem;
+
+          // letter-spacing: 0.5px;
+          // text-transform: uppercase;
+          &:hover {
+            color: $body-color;
+          }
+          // span {
+          //   padding-left: 1rem;
+          // }
+        }
+      }
+    }
+    .dVifjY {
+      border-left: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  .rdt_TableBody {
+    // border: 1px solid;
+    // border-color: $border-color;
+    .rdt_TableRow {
+      border-bottom: 1px solid $border-color;
+      .rdt_TableCell {
+        // border: 1px solid;
+        // border-color: $border-color;
+        min-height: 30px;
+        padding: 0.12rem 0.5rem;
+        //  font-weight: bold;
+        font-size: small;
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+      .cmbwYX {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell:first-child {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell {
+        border-right: 1px solid $border-color;
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .hlidmt {
+    background-color: $white;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .hlidmt input {
+    margin-left: 0.4rem;
+  }
+  .hlidmt span {
+    display: flex;
+    align-items: center;
+    margin-left: 0.4rem;
+  }
+}
+.dt-table-inside {
+  border-radius: 0;
+  .rdt_Table {
+    .rdt_TableHead {
+      .rdt_TableHeadRow {
+        background-color: $data-table-head-bg;
+        //min-height: 0;
+        min-height: 28px;
+        // display: flex;
+        .rdt_TableCol {
+          // border-top: 1px solid $border-color;
+          // border-right: 1px solid $border-color;
+          // border-left: 1px solid $border-color;
+          // padding: 0.12rem 0.5rem;
+          // width: 100% !important;
+          .rdt_TableCol_Sortable {
+            // background-color: red;
+            width: 100%;
+            div {
+              width: 100%;
+            }
+          }
+          // div {
+          //   .erp-dropdown-select {
+          //     .dropdown__control {
+          //       width: 100%;
+          //     }
+          //   }
+          // }
+          // min-width: inherit;
+          // background-color: red;
+        }
+      }
+      .dVifjY {
+        border-left: 1px solid $border-color;
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+    }
+    .rdt_TableBody {
+      display: none;
+    }
+  }
+}
+.consumption-dataTable {
+  border-radius: 0;
+  min-height: 100px !important;
+  .sc-fznWqX {
+    display: block;
+  }
+
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      background-color: $data-table-head-bg;
+      //min-height: 0;
+      min-height: 28px;
+      .rdt_TableCol {
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        padding: 0.12rem 0.12rem;
+        .rdt_TableCol_Sortable {
+          color: $body-color;
+          font-weight: bold;
+          font-style: 0.857rem;
+          font-size: 0.85rem;
+
+          // letter-spacing: 0.5px;
+          // text-transform: uppercase;
+          &:hover {
+            color: $body-color;
+          }
+          // span {
+          //   padding-left: 1rem;
+          // }
+        }
+      }
+    }
+    .dVifjY {
+      border-left: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  .rdt_TableBody {
+    // border: 1px solid;
+    // border-color: $border-color;
+    .rdt_TableRow {
+      border-bottom: 1px solid $border-color;
+      .rdt_TableCell {
+        // border: 1px solid;
+        // border-color: $border-color;
+        min-height: 30px;
+        padding: 0.12rem 0.12rem;
+        //  font-weight: bold;
+        font-size: small;
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+      .cmbwYX {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell:first-child {
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+      .rdt_TableCell {
+        border-right: 1px solid $border-color;
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .hlidmt {
+    background-color: $white;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .hlidmt input {
+    margin-left: 0.4rem;
+  }
+  .hlidmt span {
+    display: flex;
+    align-items: center;
+    margin-left: 0.4rem;
+  }
+}
+
+.rdt_Pagination {
+  min-height: 48px;
+  font-size: small;
+  font-weight: 500;
+  select {
+    min-width: 30px;
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+  button:disabled {
+    svg {
+      fill: rgb(189, 186, 186);
+    }
+  }
+  button:not(:disabled) {
+    svg {
+      fill: $primary;
+    }
+  }
+  svg {
+    // fill: green;
+  }
+}
+
+.dataTable-filter {
+  max-width: 220px;
+}
+
+.dataTable-select {
+  width: 5rem;
+  &:not([multiple='multiple']) {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background-position: calc(100% - 12px) 10px, calc(100% - 20px) 12px, 100% 0;
+    background-size: 10px 10px, 10px 10px;
+  }
+}
+
+.dark-layout {
+  .app-user-list {
+    header {
+      background-color: $theme-dark-card-bg;
+    }
+  }
+
+  .react-dataTable {
+    .hlidmt {
+      background-color: $theme-dark-card-bg;
+    }
+    .khKjDK {
+      background-color: $theme-dark-card-bg;
+      color: $theme-dark-body-color;
+    }
+
+    .rdt_Table {
+      background: $theme-dark-table-header-bg;
+      color: $theme-dark-body-color;
+    }
+    .rdt_TableHead {
+      .rdt_TableHeadRow {
+        background-color: $theme-dark-table-header-bg;
+        border-color: $theme-dark-border-color;
+        .rdt_TableCol {
+          color: $theme-dark-body-color;
+          div[role='button'] {
+            color: $theme-dark-body-color;
+          }
+        }
+        .rdt_TableCol_Sortable,
+        .rdt_TableCol_Sortable:hover {
+          color: $theme-dark-headings-color;
+          svg {
+            stroke: $theme-dark-headings-color;
+          }
+        }
+      }
+    }
+    .rdt_TableBody {
+      .expandable-content {
+        background-color: $theme-dark-table-bg;
+        color: $theme-dark-body-color;
+      }
+      .rdt_TableRow {
+        background-color: $theme-dark-table-bg;
+        color: $theme-dark-body-color;
+        border-color: $theme-dark-border-color;
+        .rdt_TableCell {
+          color: $theme-dark-body-color;
+        }
+        button {
+          &:hover:not(:disabled) {
+            background-color: $theme-dark-body-bg;
+          }
+          svg {
+            color: $theme-dark-body-color;
+          }
+        }
+      }
+    }
+    .rdt_Pagination {
+      background-color: $theme-dark-table-bg;
+      color: $theme-dark-body-color;
+
+      svg {
+        fill: $theme-dark-body-color;
+      }
+    }
+  }
+
+  .rdt_Pagination {
+    color: $theme-dark-body-color;
+    background-color: $theme-dark-card-bg;
+    button {
+      svg {
+        fill: $theme-dark-body-color;
+      }
+      &[disabled] svg {
+        fill: $theme-dark-text-muted-color;
+      }
+    }
+  }
+}

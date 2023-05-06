@@ -1,0 +1,10 @@
+export const GET_USERS = 'GET_USERS';
+export const GET_USERS_BY_QUERY = 'GET_USERS_BY_QUERY';
+export const GET_USER_BY_ID = 'GET_USER_BY_ID';
+export const ADD_USER = 'ADD_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const DELETE_USER_BY_RANGE = 'DELETE_USER_BY_RANGE';
+export const SELECTED_USER_NULL = 'SELECTED_USER_NULL';
+export const OPEN_USER_SIDEBAR = 'OPEN_USER_SIDEBAR';
+export const DROP_DOWN_USERS = 'DROP_DOWN_USERS';

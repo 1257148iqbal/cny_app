@@ -1,0 +1,65 @@
+$red: #8457cc;
+$yellow: #ffc107;
+$blue: #68671e96;
+
+.myDiv {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  display: flex;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+
+.spin-1 {
+  border-right-color: $red;
+  border-left-color: $red;
+  width: 70px;
+  height: 70px;
+  animation: spin 1.1s linear infinite;
+}
+
+.spin-2 {
+  border-right-color: $yellow;
+  border-left-color: $yellow;
+  width: 50px;
+  height: 50px;
+  animation: spinner 1.05s linear infinite;
+}
+
+.spin-3 {
+  border-right-color: $blue;
+  border-left-color: $blue;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

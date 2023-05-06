@@ -1,0 +1,76 @@
+// @import "../../../../@core/scss/base/bootstrap-extended/include";
+// @import "../../../../@core/scss/base/components/include";
+$green-logo: #4bb649;
+$green-orange: #f15b25;
+$green-blue: #02205f;
+.container {
+  height: 200px;
+  width: 100%;
+}
+
+.container > div {
+  padding: 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-loader {
+  display: inline-block;
+  font-size: 0px;
+}
+.inline-loader span {
+  vertical-align: middle;
+  border-radius: 100%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 2px;
+  -webkit-animation: inline-loader 0.8s linear infinite alternate;
+  animation: inline-loader 0.8s linear infinite alternate;
+}
+.inline-loader span:nth-child(1) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: $green-logo;
+}
+.inline-loader span:nth-child(2) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: $green-orange;
+}
+.inline-loader span:nth-child(3) {
+  -webkit-animation-delay: -0.26666s;
+  animation-delay: -0.26666s;
+  background: $green-blue;
+}
+.inline-loader span:nth-child(4) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: $green-orange;
+}
+.inline-loader span:nth-child(5) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: $green-logo;
+}
+
+@keyframes inline-loader {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes inline-loader {
+  from {
+    -webkit-transform: scale(0, 0);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}

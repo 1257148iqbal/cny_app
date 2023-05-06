@@ -1,0 +1,1 @@
+export const FILE_PROGRESS = 'FILE_PROGRESS';

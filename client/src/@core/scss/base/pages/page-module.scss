@@ -1,0 +1,107 @@
+@import "../bootstrap-extended/include"; // Bootstrap includes
+@import "../components/include"; // Components includes
+
+$module-1-inner-max-width: 400px !default;
+
+.module-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+
+  .module-inner {
+    width: 100%;
+    position: relative;
+    background-color: rgba(231, 238, 236, 0.582);
+  }
+
+  &.module-v1 {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; // For v1 scroll for long module form
+    .module-inner {
+      &:before {
+        width: 244px;
+        height: 243px;
+        content: " ";
+        position: absolute;
+        top: -54px;
+        left: -46px;
+        background-color: aqua;
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
+      }
+      &:after {
+        width: 272px;
+        height: 272px;
+        content: " ";
+        position: absolute;
+        bottom: -55px;
+        right: -75px;
+        background-color: aqua;
+        z-index: -1;
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.module-v2 {
+    align-items: flex-start;
+    .module-inner {
+      height: 100vh;
+      overflow-y: auto; // For v2 scroll for long module form
+      height: calc(var(--vh, 1vh) * 100);
+    }
+    .brand-logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      margin: 0;
+      z-index: 1;
+    }
+  }
+
+  &.module-v1 .module-inner {
+    max-width: $module-1-inner-max-width;
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+    .brand-text {
+      font-weight: 600;
+    }
+  }
+
+  .module-footer-btn {
+    .btn {
+      padding: 0.6rem !important;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .module-wrapper {
+    &.module-v2 .module-card {
+      width: $module-1-inner-max-width;
+    }
+  }
+}
+
+.module-wrapper .module-bg {
+  background-color: $white;
+}
+
+.dark-layout {
+  .module-wrapper .module-bg {
+    background-color: $theme-dark-card-bg;
+  }
+}

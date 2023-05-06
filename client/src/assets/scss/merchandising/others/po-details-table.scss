@@ -1,0 +1,48 @@
+@import "../../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../../@core/scss/base/components/include";
+
+.po-details-table {
+  width: 100%;
+  .table-responsive {
+    width: 100%;
+    // overflow-y: initial;
+  }
+
+  th,
+  td {
+    // text-align: center;
+    min-width: 84px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    // max-width: 121px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  input[type="date"].custom-date {
+    max-width: 140px;
+    padding-inline-start: 0;
+  }
+}
+
+// .pre-costing-summary-table {
+//   .table {
+//     width: 100%;
+//     // background-color: rgb(107, 10, 10);
+//     th,
+//     td {
+//       max-width: 15px;
+//       padding: 0;
+//       margin-left: 0em;
+//       margin-right: 0em;
+//       input {
+//         // width: 70%;
+//         align-content: flex-end;
+//         float: right;
+//         clear: both;
+//         text-align: right;
+//       }
+//     }
+//   }
+// }

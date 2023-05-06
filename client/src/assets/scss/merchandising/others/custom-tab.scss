@@ -1,0 +1,183 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+.custom-tab {
+  margin-bottom: 0;
+  .nav-link {
+    // style={{ backgroundColor: 'white', border: 'solid 2px red', borderRadiusTopLeft: '10px' }}
+    background-color: $primary;
+    color: white;
+    border: rebeccapurple solid 1px;
+    border-bottom: none;
+    padding: 5px;
+    margin: 5px 5px -0.01rem 5px;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .nav-link:hover {
+    color: rgb(222, 236, 141);
+  }
+  .nav-link.active {
+    background-color: white;
+    border: rebeccapurple solid 1px;
+    border-bottom: none;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .nav-link.active:hover {
+    color: $primary;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+.custom-tab2 {
+  .nav {
+    transform: inherit;
+    background-color: skyblue;
+    margin-bottom: 0;
+    border-radius: none;
+    padding-left: 15px;
+  }
+
+  .nav-link {
+    // style={{ backgroundColor: 'white', border: 'solid 2px red', borderRadiusTopLeft: '10px' }}
+    background-color: $primary;
+    color: white;
+    padding: 5px;
+    margin: 5px 5px -0.06rem 5px;
+    // border-radius: 6px 6px 0px 0px;
+    transform: skewX(-15deg);
+  }
+  .nav-link:hover {
+    color: rgb(222, 236, 141);
+  }
+  .nav-link.active {
+    background-color: white;
+  }
+  .nav-link.active:hover {
+    color: $primary;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+}
+.custom-tab3 {
+  .nav {
+    transform: inherit;
+    background-color: skyblue;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding-left: 15px;
+    border-bottom: solid 1px;
+  }
+
+  .nav-link {
+    // style={{ backgroundColor: 'white', border: 'solid 2px red', borderRadiusTopLeft: '10px' }}
+    background-color: $primary;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px -0.06rem 0px;
+    // border-radius: 6px 6px 0px 0px;
+    transform: skewX(-15deg);
+  }
+  .nav-link:hover {
+    color: rgb(222, 236, 141);
+  }
+  .nav-link.active {
+    background-color: white;
+  }
+  .nav-link.active:hover {
+    color: $primary;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+  .tab-content {
+    border: solid 1px;
+    border-top: 0;
+    padding: 5px;
+  }
+}
+.custom-tab4 {
+  .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #692f6c;
+    text-shadow: 1px 1px 2px #000;
+    border: none;
+    border-radius: 0;
+    opacity: 0.5;
+    position: relative;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-link.active {
+    opacity: 1;
+    background: #692f6c;
+  }
+  .nav-link:hover {
+    background: #692f6c;
+    opacity: 0.8;
+  }
+}
+
+.tab-main {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  .tab-sidebar {
+    display: flex;
+    width: 130px;
+    background-color: #f3f2f7;
+    justify-content: right;
+    .link-tab {
+      margin-top: 1rem;
+      .tab-link-item {
+        background-color: whitesmoke;
+        color: white;
+        width: 120px;
+        box-sizing: border-box;
+        font-weight: bolder;
+        text-align: right;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        list-style-type: none;
+        border-radius: 0.3rem 0 0 0.3rem;
+      }
+      .tab-link-item.active {
+        //  margin-top: -1rem;
+        color: white;
+        background-color: $primary;
+        box-shadow: inset 0px 0px 15.3px 2.7px rgba(0, 0, 0, 0.21);
+        z-index: 0;
+        border-right: 9px solid $success;
+      }
+      .tab-link-item.inactive {
+        color: $primary;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        border-right: 9px solid transparent;
+      }
+      .tab-link-item:hover {
+        // padding-right: 0.5rem;
+        cursor: pointer;
+      }
+      .tab-link-item.active:hover {
+        // padding-right: 0.5rem;
+        background-color: $primary;
+        cursor: default;
+      }
+    }
+  }
+  .tab-main-content {
+    width: 95%;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: white;
+    border: 0.1rem solid #f3f2f7;
+    padding: 0.5rem;
+    max-height: 300px;
+  }
+}

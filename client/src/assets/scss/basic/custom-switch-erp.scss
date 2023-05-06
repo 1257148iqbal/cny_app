@@ -1,0 +1,128 @@
+$switch-bg-color: red;
+$black: white;
+$switch-indicator-color: rgb(255, 255, 255);
+$white: white;
+.po-list-custom-input-switch {
+  //   .custom-switch .custom-control-label::before {
+  //     left: -3.5rem;
+  //     width: 3rem;
+  //     pointer-events: all;
+  //     border-radius: 1rem;
+  //   }
+
+  .custom-switch {
+    padding-left: 1rem;
+    line-height: 1.7rem;
+
+    .custom-control-label {
+      padding-left: 3.5rem;
+      line-height: 1.7rem;
+
+      /* For bg color of switch*/
+      &::before {
+        border: none;
+        background-color: $switch-bg-color;
+        height: 1.7rem;
+        box-shadow: none !important;
+        transition: opacity 0.25s ease, background-color 0.1s ease;
+        cursor: pointer;
+        user-select: none;
+        top: 0;
+        left: 0;
+      }
+      /*For Switch handle*/
+      &:after {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        box-shadow: -1px 2px 3px 0 rgba($black, 0.2);
+        background-color: $switch-indicator-color;
+        transition: all 0.15s ease-out;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      /*For Switch text*/
+      .switch-text-left,
+      .switch-text-right,
+      .switch-icon-left,
+      .switch-icon-right {
+        position: absolute;
+        cursor: pointer;
+        user-select: none;
+        line-height: 1.8;
+        i,
+        svg {
+          height: 13px;
+          width: 13px;
+          font-size: 13px;
+        }
+      }
+      .switch-text-left,
+      .switch-icon-left {
+        left: 6px;
+        color: $white;
+        opacity: 0;
+        transform: translateX(8px);
+        transition: opacity 0.1s ease, transform 0.15s ease;
+      }
+      .switch-text-right,
+      .switch-icon-right {
+        right: 13px;
+        opacity: 1;
+        transform: translateX(0px);
+        transition: opacity 0.08s ease, transform 0.15s ease;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    /*For Switch label*/
+
+    .switch-label {
+      padding-left: 1rem;
+    }
+
+    // after its checked
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      box-shadow: none;
+    }
+
+    /*For Switch Handle Animation*/
+    .custom-control-input:checked ~ .custom-control-label::after {
+      transform: translateX(1.4rem);
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+      .switch-text-left,
+      .switch-icon-left {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .switch-text-right,
+      .switch-icon-right {
+        transform: translateX(-8px);
+        opacity: 0;
+      }
+    }
+    .custom-control-input:not(:checked) ~ .custom-control-label {
+      .switch-text-left {
+        opacity: 0;
+      }
+      .switch-text-right {
+        opacity: 1;
+      }
+    }
+    .custom-control-input:checked ~ .custom-control-label {
+      .switch-text-right {
+        opacity: 0;
+      }
+      .switch-text-left {
+        opacity: 1;
+      }
+    }
+  }
+}

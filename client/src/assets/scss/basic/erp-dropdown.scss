@@ -1,0 +1,185 @@
+@import '../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../@core/scss/base/components/include';
+
+// InValid Select
+.erp-dropdown-select.is-invalid {
+  .dropdown__control {
+    border-color: $danger;
+  }
+}
+
+// Select Control(Input)
+.dropdown__control,
+.erp-dropdown-select__control {
+  &.dropdown__control {
+    min-height: 2.142rem;
+    padding: 0rem;
+    border: 1px solid #d8d6de;
+    .dropdown__value-container {
+      font-size: small;
+      padding: 0px 6px;
+      font-weight: 500;
+    }
+    .dropdown__single-value {
+      top: 46%;
+    }
+  }
+  &.dropdown__control--is-disabled {
+    border-color: $border-color;
+    background-color: $input-disabled-bg;
+    .dropdown__indicator-separator {
+      background-color: $border-color;
+    }
+  }
+
+  &.dropdown__control--is-focused,
+  &.erp-dropdown-select__control--is-focused {
+    box-shadow: none;
+    border-color: $primary;
+  }
+
+  .dropdown__indicator svg {
+    cursor: pointer;
+    color: #d8d6de;
+  }
+  .dropdown__indicator {
+    padding: 3px;
+  }
+
+  .dropdown__indicator-separator {
+    display: none;
+  }
+  .dropdown__single-value {
+    color: $body-color;
+  }
+
+  .dropdown__placeholder {
+    color: $body-color;
+  }
+}
+
+// Select Menu
+.dropdown__menu,
+.erp-dropdown-select__menu {
+  .dropdown__menu-list,
+  .erp-dropdown-select__menu-list {
+    .dropdown__option {
+      padding: 0.1rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+      font-weight: 500;
+    }
+    .erp-dropdown-select__option {
+      // cursor: pointer;
+      &.dropdown__option--is-focused {
+        background-color: rgba($color: $primary, $alpha: 0.12);
+        color: $primary;
+      }
+
+      &.dropdown__option--is-selected {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+
+  .dropdown__menu-list,
+  .erp-dropdown-select__menu-list {
+    .dropdown__group {
+      .dropdown__group-heading {
+        margin-bottom: 0.5rem;
+        color: $headings-color;
+        font-weight: bolder;
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+// Multi Select
+.dropdown__multi-value,
+.erp-dropdown-select__multi-value {
+  color: $white;
+  border-radius: 3px;
+  // margin: 0 0.7rem 0 0;
+  margin: 0.1rem;
+
+  .dropdown__multi-value__label {
+    color: $white;
+    font-size: 0.85rem;
+    border-radius: $border-radius;
+    padding: 0.26rem 0.6rem;
+  }
+
+  .dropdown__multi-value__remove {
+    padding-left: 0;
+    padding-right: 0.5rem;
+
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+    }
+
+    svg {
+      height: 0.85rem;
+      width: 0.85rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Select Borderless
+.dropdown-borderless {
+  .dropdown__control {
+    border: 0;
+    .dropdown__indicators {
+      display: none;
+    }
+  }
+}
+
+// Dark Layout
+.dark-layout {
+  .dropdown__control {
+    background-color: $theme-dark-input-bg;
+    border-color: $theme-dark-border-color;
+
+    .dropdown__indicator svg {
+      fill: $theme-dark-body-color;
+    }
+
+    .dropdown__indicator span,
+    .dropdown__single-value {
+      color: $theme-dark-body-color;
+    }
+
+    .dropdown__multi-value {
+      background-color: rgba($color: $primary, $alpha: 0.12);
+      .dropdown__multi-value__label {
+        color: $primary;
+        cursor: grab;
+      }
+    }
+    .dropdown__multi-value__remove {
+      svg {
+        fill: $primary;
+      }
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+
+    .dropdown__placeholder {
+      color: $theme-dark-input-placeholder-color;
+    }
+
+    &.dropdown__control--is-disabled {
+      opacity: 0.5;
+    }
+  }
+  .dropdown__menu {
+    background-color: $theme-dark-card-bg;
+  }
+}

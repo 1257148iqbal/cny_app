@@ -1,0 +1,22 @@
+
+.stickyTableHead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.childTable {
+  width: 95%;
+  margin: 0.5rem auto;
+  thead {
+    tr {
+      th {
+        background-color: rgba(115, 103, 240, 0.15) !important;
+      }
+    }
+  }
+}
+
+.inputBoxCenterAlign {
+  text-align: center;
+}

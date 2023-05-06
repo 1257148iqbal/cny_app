@@ -1,0 +1,44 @@
+.mainTable {
+  width: 100%;
+
+  thead {
+    tr {
+      th {
+        padding: 0.2rem 0 !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 0 0.4rem !important;
+      }
+    }
+  }
+}
+
+.stickyTableHead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.childTable {
+  width: 95%;
+  margin: 0.7rem auto;
+  thead {
+    tr {
+      th {
+        background-color: rgba(115, 103, 240, 0.15) !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 0.3rem 0.4rem !important;
+      }
+    }
+  }
+}

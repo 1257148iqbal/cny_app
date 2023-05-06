@@ -1,0 +1,60 @@
+@import "../../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../../@core/scss/base/components/include";
+
+.pc-custom-collapse {
+  width: 100%;
+
+  // background-color: $white;
+  z-index: 5;
+  position: relative;
+  top: 58px;
+  height: auto;
+  padding: 0;
+
+  //   transition: right 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+  backface-visibility: hidden;
+  // border-left: 1px solid rgba($black, 0.05);
+
+  // &.open {
+  //   box-shadow: 0 15px 30px 0 rgba($black, 0.11),
+  //     0 5px 15px 0 rgba($black, 0.08);
+  //   right: 0;
+  // }
+
+  // customizer toggle icon
+  .pc-custom-collapse-toggle {
+    display: block;
+    box-shadow: -3px 0px 8px rgba($black, 0.1);
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    top: 60px;
+    width: auto;
+    height: 38px;
+    left: -100px;
+    text-align: center;
+    // line-height: 40px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+  .inner-border {
+    border: 20px solid black;
+    box-shadow: inset 0px 0px 0px 10px red;
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+  }
+}
+
+// .active-btn-color {
+//   background-color: $success;
+//   margin: 2.5px;
+//   border-top-left-radius: 5px;
+//   border-top-right-radius: 5px;
+// }
+// .inactive-btn-color {
+//   margin: 2.5px;
+//   border-top-left-radius: 5px;
+//   border-top-right-radius: 5px;
+//   background-color: $primary;
+// }
+// .active::after {
+//   display: none;
+// }

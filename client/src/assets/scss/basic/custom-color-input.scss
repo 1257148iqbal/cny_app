@@ -1,0 +1,17 @@
+.color-input {
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  margin: -11px;
+  padding: 0;
+  opacity: 0;
+  border-radius: 100%;
+}
+
+.color-pick {
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(39, 38, 38, 0.2) !important;
+  border-radius: 15%;
+}

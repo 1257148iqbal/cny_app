@@ -1,0 +1,23 @@
+.mainTable {
+  width: 100%;
+
+  thead {
+    tr {
+      th {
+        padding: 0.2rem 0 !important;
+        color: black !important;
+        font-size: 14px;
+        vertical-align: middle !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 0.4rem 0.4rem !important;
+        color: black !important;
+      }
+    }
+  }
+}

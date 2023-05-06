@@ -1,0 +1,85 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+.custom-form-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  .custom-form-value-label {
+    font-weight: bolder;
+  }
+  .custom-form-label {
+    width: 30%;
+    font-weight: bolder;
+  }
+  .custom-form-colons {
+    width: 5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group {
+    width: 65%;
+  }
+  .custom-form-label.address {
+    width: 14.5%;
+    font-weight: bolder;
+  }
+  .custom-form-colons.address {
+    width: 2.5%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .custom-form-group.address {
+    width: 83%;
+  }
+
+  .custom-form-input-group {
+    width: 60%;
+    display: flex;
+    .custom-input-group-prepend {
+      width: 48%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append {
+      width: 50%;
+    }
+    .custom-input-group-prepend.inside-btn {
+      width: 87%;
+      margin-right: 2%;
+    }
+    .custom-input-group-append.inside-btn {
+      width: 11%;
+      text-align: right;
+      display: flex;
+      .btn.btn-sm.btn-icon {
+        padding: 0.39rem;
+      }
+      .btn-outline-secondary {
+        border: 1px solid #d8d6de !important;
+      }
+    }
+  }
+}
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7faff;
+  padding: 2rem;
+  .user-photo {
+    text-align: center;
+
+    .user-avatar {
+      height: 120px;
+      width: 120px;
+      // border: solid 0.12rem $secondary;
+    }
+    .btn-upload {
+      margin-top: 1rem;
+      .btn-sm {
+        border-radius: 0%;
+        background-color: $primary !important;
+      }
+    }
+  }
+}

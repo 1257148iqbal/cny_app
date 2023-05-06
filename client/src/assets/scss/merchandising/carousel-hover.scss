@@ -1,0 +1,58 @@
+.image-main-div {
+  position: relative;
+  width: 100%;
+  background-color: #708090 !important;
+}
+
+.image-carousel {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  background-color: black;
+}
+.carousel-main-div {
+  border: 1px solid #ebe9f1;
+  padding: 5px;
+  border-radius: 1%;
+  width: 100%;
+  height: 100%;
+}
+.image-carousel-details {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 290px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  background-color: rgb(247, 243, 243);
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-main-div:hover .image-carousel {
+  opacity: 0.3;
+}
+
+.image-main-div:hover .middle {
+  opacity: 1;
+}
+
+.action-btn {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}

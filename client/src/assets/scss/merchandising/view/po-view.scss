@@ -1,0 +1,15 @@
+@import "../../../../@core/scss/base/bootstrap-extended/include";
+@import "../../../../@core/scss/base/components/include";
+@import "../../../../@core/scss/base/core/colors/palette-variables.scss";
+
+@import "bootstrap/scss/mixins/_gradients";
+@import "bootstrap/scss/mixins/gradients";
+
+.po-view {
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: inherit;
+    opacity: 1;
+    font-weight: bold;
+  }
+}

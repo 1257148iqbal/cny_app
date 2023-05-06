@@ -1,0 +1,83 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+
+.custom-float {
+  width: 500px;
+  right: -500px;
+  padding: 0;
+  background-color: $white;
+  z-index: 1051;
+  position: fixed;
+  top: 15%;
+
+  transition: right 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+  backface-visibility: hidden;
+  border-left: 1px solid rgba($black, 0.05);
+
+  &.open {
+    box-shadow: 0 15px 30px 0 rgba($black, 0.11),
+      0 5px 15px 0 rgba($black, 0.08);
+    right: 0;
+  }
+
+  // customizer content height
+  .custom-float-content {
+    position: relative;
+    height: 100%;
+  }
+
+  //customizer close button
+  .custom-float-close {
+    position: absolute;
+    right: 0.6rem;
+    top: 0.6rem;
+    padding: 7px;
+    width: auto;
+    z-index: 10;
+    color: $headings-color;
+    i,
+    svg {
+      font-size: 1.5rem;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  // customizer toggle icon
+  .custom-float-toggle {
+    display: block;
+    box-shadow: -3px 0px 8px rgba($black, 0.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    height: 38px;
+    left: -25%;
+    text-align: center;
+    line-height: 40px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+  // customizer toggle icon
+  .custom-float-toggle-close {
+    background: $primary;
+    color: $white !important;
+    display: block;
+    box-shadow: -3px 0px 8px rgba($black, 0.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    top: 5%;
+    width: auto;
+    height: 38px;
+    left: -13%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+}

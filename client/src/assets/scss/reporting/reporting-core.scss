@@ -1,0 +1,119 @@
+@import '../../../../@core/scss/base/bootstrap-extended/include';
+@import '../../../../@core/scss/base/components/include';
+// @import '../../../../@core/scss/base/bootstrap-extended/include';
+// @import '../../../../@core/scss/base/components/include';
+
+@import '@custom-styles/reporting/custom-css-core.scss';
+
+.table-responsive {
+  max-height: 300px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  color: black;
+}
+
+.cursor-pointer:hover {
+  color: #4a3bf0;
+}
+
+.react-table-height {
+  min-height: 30px !important;
+  padding: 0 20px 20px 20px !important;
+}
+
+.table th,
+.table td {
+  padding: 0.25rem 2rem !important;
+}
+
+.card-body-override {
+  padding: 0.7rem !important;
+}
+
+.custom-modal {
+  min-width: 690px !important;
+}
+
+.nav-tabs .nav-link.active {
+  background: $primary !important ;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+#main-menu-navigation > li {
+  font-weight: bold !important;
+  // > a > span {
+  //   color: #242329;
+  // }
+  > .dropdown-menu {
+    a {
+      font-weight: bold !important;
+      width: 355px !important;
+      &:hover {
+        background-color: rgba(115, 103, 240, 0.1) !important;
+        color: #242329 !important;
+      }
+    }
+    .active > a {
+      color: white !important;
+      background-color: rgba(115, 103, 240, 0.8) !important;
+      &:after {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E") !important;
+      }
+    }
+  }
+}
+
+.ddstables,
+.ddstables tr,
+.ddstables td {
+  border: 1px solid;
+}
+
+.ddstables {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ss {
+  min-height: calc(1080px - 150px);
+}
+
+// .form-control {
+//   height: 2rem !important;
+// }
+
+// .css-1eyvi4t-control{
+//   height: 30px !important;
+//   min-height: 30px !important;
+// }
+
+body {
+  line-height: 1 !important;
+}
+
+.custom-table {
+  width: 100%;
+
+  thead {
+    tr {
+      th {
+        padding: 0.35rem 0.15rem !important;
+        color: black !important;
+        font-size: 14px;
+        vertical-align: middle !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 0.4rem 0.4rem !important;
+        color: black !important;
+      }
+    }
+  }
+}

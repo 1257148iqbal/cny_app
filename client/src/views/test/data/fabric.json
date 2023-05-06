@@ -1,0 +1,36 @@
+{
+  "fabricDetails": [
+    {
+      "costingGroupType": 1,
+      "itemGroupId": 1,
+      "itemGroupName": "Knit Fabric",
+      "itemSubGroupId": 1,
+      "itemSubGroupName": "Knit Fabric",
+      "itemDescription": "# 996N - CREPE MESH 90/10 COOLMAX POLYESTER AOP FLEECE NO PILLING FINISHED . GSM 100",
+      "itemDescriptionTemplate": "[{\"segmentId\":7,\"segmentName\":\"REF#\",\"value\":\"# 996N - CREPE MESH\"},{\"segmentId\":8,\"segmentName\":\"construction\",\"value\":\"90/10\"},{\"segmentId\":9,\"segmentName\":\"Composition\",\"value\":\"COOLMAX POLYESTER\"},{\"segmentId\":10,\"segmentName\":\"Dyeing Type\",\"value\":\"AOP FLEECE\"},{\"segmentId\":11,\"segmentName\":\"Finishing Type\",\"value\":\"NO PILLING FINISHED\"},{\"segmentId\":4,\"segmentName\":\"Width\",\"value\":\".\"},{\"segmentId\":3,\"segmentName\":\"Weight\",\"value\":\"GSM 100\"}]",
+      "consumptionUom": "YDS",
+      "consumptionUomRelativeFactor": 0.9144,
+      "consumptionQuantity": 1.0,
+      "orderUom": "YDS",
+      "orderUomRelativeFactor": 0.9144,
+      "wastagePercent": 0.0,
+      "ratePerUnit": 1.0
+    },
+    {
+      "costingGroupType": 1,
+      "itemGroupId": 2,
+      "itemGroupName": "Woven Fabric",
+      "itemSubGroupId": 3,
+      "itemSubGroupName": "Woven Fabric",
+      "itemDescription": "CREPE MESH 90/10 COOLMAX POLYESTER AOP FLEECE NO PILLING FINISHED . GSM 100",
+      "itemDescriptionTemplate": "[{\"segmentId\":7,\"segmentName\":\"REF#\",\"value\":\"# 996N - CREPE MESH\"},{\"segmentId\":8,\"segmentName\":\"construction\",\"value\":\"90/10\"},{\"segmentId\":9,\"segmentName\":\"Composition\",\"value\":\"COOLMAX POLYESTER\"},{\"segmentId\":10,\"segmentName\":\"Dyeing Type\",\"value\":\"AOP FLEECE\"},{\"segmentId\":11,\"segmentName\":\"Finishing Type\",\"value\":\"NO PILLING FINISHED\"},{\"segmentId\":4,\"segmentName\":\"Width\",\"value\":\".\"},{\"segmentId\":3,\"segmentName\":\"Weight\",\"value\":\"GSM 100\"}]",
+      "consumptionUom": "YDS",
+      "consumptionUomRelativeFactor": 0.9144,
+      "consumptionQuantity": 1.0,
+      "orderUom": "YDS",
+      "orderUomRelativeFactor": 0.9144,
+      "wastagePercent": 0.0,
+      "ratePerUnit": 1.0
+    }
+  ]
+}

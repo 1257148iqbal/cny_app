@@ -1,0 +1,30 @@
+import BreadCrumbs from '@components/breadcrumbs';
+import { Fragment } from 'react';
+import { Col, Row } from 'reactstrap';
+import WizardHorizontal from './WizardHorizontal';
+import WizardModern from './WizardModern';
+import WizardModernVertical from './WizardModernVertical';
+import WizardVertical from './WizardVertical';
+
+const Wizard = () => {
+  return (
+    <Fragment>
+      <BreadCrumbs breadCrumbTitle='Form Wizard' breadCrumbParent='Form' breadCrumbActive='Form Wizard' />
+      <Row>
+        <Col sm='12'>
+          <WizardHorizontal />
+        </Col>
+        <Col sm='12'>
+          <WizardVertical />
+        </Col>
+        <Col sm='12'>
+          <WizardModern />
+        </Col>
+        <Col sm='12'>
+          <WizardModernVertical />
+        </Col>
+      </Row>
+    </Fragment>
+  );
+};
+export default Wizard;

@@ -1,0 +1,9 @@
+.search-box-root {
+  ///
+  margin-top: 10px;
+
+  .card-transition {
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  }
+}
