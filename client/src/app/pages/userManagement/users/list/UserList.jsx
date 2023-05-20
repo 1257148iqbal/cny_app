@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 import {
   ActionButtonGroup,
   ConfirmDialog,
-  CustomBackDrop,
   CustomTable,
   NewButton,
   Switch,
@@ -51,11 +50,19 @@ const UserList = (props) => {
   const [state] = useState([
     {
       id: 1,
-      name: "Iqbal",
-      email: "iqbal@gmail.com",
+      name: "Md. Rahim",
+      email: "rahim@gmail.com",
       mobile: "0181717171",
       designation: "User",
       isActive: true,
+    },
+    {
+      id: 1,
+      name: "Karim",
+      email: "karim@gmail.com",
+      mobile: "0181717171",
+      designation: "User",
+      isActive: false,
     },
   ]);
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -207,7 +214,7 @@ const UserList = (props) => {
       <CustomDrawer
         drawerOpen={drawerOpen}
         setDrawerOpen={setDrawerOpen}
-        title="Department"
+        title="UserForm"
       >
         {/* <OperatorGroupForm recordForEdit={recordForEdit} onSubmit={onSubmit} /> */}
       </CustomDrawer>
@@ -215,4 +222,4 @@ const UserList = (props) => {
   );
 };
 
-export default withSortBy(UserList, "DepartmentName");
+export default withSortBy(UserList, "name");
