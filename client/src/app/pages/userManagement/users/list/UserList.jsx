@@ -216,7 +216,7 @@ const UserList = (props) => {
         setDrawerOpen={setDrawerOpen}
         title="UserForm"
       >
-        {/* <OperatorGroupForm recordForEdit={recordForEdit} onSubmit={onSubmit} /> */}
+        {/* <UserForm recordForEdit={recordForEdit} onSubmit={onSubmit} /> */}
       </CustomDrawer>
     </Box>
   );
