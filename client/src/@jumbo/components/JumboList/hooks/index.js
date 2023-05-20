@@ -1,0 +1,1 @@
+export {default as useJumboList} from './useJumboList';

@@ -1,6 +1,0 @@
-userName
-Name,
-Email,
-Role,
-Plan,
-status

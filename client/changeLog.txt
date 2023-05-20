@@ -1,3 +1,0 @@
-src\@core\components\autocomplete\index.js
-    const suggestionList = ReactDOM.findDOMNode( suggestionsListRef.current );
-to 
