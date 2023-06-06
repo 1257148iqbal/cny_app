@@ -13,7 +13,12 @@ import {
   StyledTableRow,
 } from "app/components/CustomControls/TableRowHeadCell";
 import withSortBy from "app/components/HOC/withSortedBy";
-import React, { useState } from "react";
+import { USER } from "app/constants/ApiEndPoints";
+import { http } from "app/services/httpService";
+import { toastAlerts } from "app/utils/alerts";
+import React, { useCallback, useEffect, useState } from "react";
+import { trackPromise } from "react-promise-tracker";
+import UserForm from "../form/UserForm";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -42,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const UserList = (props) => {
+const ActiveUserList = (props) => {
   const classes = useStyles();
   const { sortedColumn, sortedBy, onSort } = props;
 
@@ -57,7 +62,7 @@ const UserList = (props) => {
       isActive: true,
     },
     {
-      id: 1,
+      id: 2,
       name: "Karim",
       email: "karim@gmail.com",
       mobile: "0181717171",
@@ -115,10 +120,25 @@ const UserList = (props) => {
   //#endregion
 
   //#region UDF
+  const getAllActiveUsers = useCallback(() => {
+    const queryParam = {};
 
+    trackPromise(
+      http
+        .get(`${USER.get_all}`)
+        .then((res) => {
+          const users = res.data.data;
+          console.log(users);
+        })
+        .catch((err) => toastAlerts("warning", "This is Error"))
+    );
+  }, []);
   //#endregion
 
   //#region Hooks
+  useEffect(() => {
+    getAllActiveUsers();
+  }, [getAllActiveUsers]);
 
   //#endregion
 
@@ -143,8 +163,7 @@ const UserList = (props) => {
     // setConfirmDialog({ ...confirmDialog, isOpen: false });
   };
 
-  const onSubmit = (e, formValue) => {
-  };
+  const onSubmit = (e, formValue) => {};
 
   //#endregion
 
@@ -187,6 +206,7 @@ const UserList = (props) => {
 
               <StyledTableCell align="center">
                 <ActionButtonGroup
+                  appeared
                   onEdit={() => {
                     onEdit(row.key);
                   }}
@@ -216,10 +236,10 @@ const UserList = (props) => {
         setDrawerOpen={setDrawerOpen}
         title="UserForm"
       >
-        {/* <UserForm recordForEdit={recordForEdit} onSubmit={onSubmit} /> */}
+        <UserForm onSubmit={onSubmit} />
       </CustomDrawer>
     </Box>
   );
 };
 
-export default withSortBy(UserList, "name");
+export default withSortBy(ActiveUserList, "name");

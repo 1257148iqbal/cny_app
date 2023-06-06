@@ -2,7 +2,7 @@
   > Title: Permission Types for Application
   > Description: 
   > Author: Iqbal Hossain
-  > Date: 2021-10-10
+  > Date: 2023-04-10
 */
 
 export const USERS = {

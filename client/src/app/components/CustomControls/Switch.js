@@ -1,9 +1,8 @@
 /*
   > Title: Switch control
   > Description: 
-  > Author: Nasir Ahmed
-  > Date: 2021-08-18
-  > Modified: 2022-01-20
+  > Author: Iqbal Hossain
+  > Date: 2023-04-10
 */
 
 import { Switch } from '@mui/material';

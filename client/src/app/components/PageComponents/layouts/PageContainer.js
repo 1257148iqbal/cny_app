@@ -9,7 +9,8 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
   pageFull: {
-    width: '100%'
+    width: '100%',
+    height:'111px'
   }
 }));
 

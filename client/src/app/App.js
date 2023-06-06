@@ -15,6 +15,7 @@ import {config} from "./config/main";
 import JumboRTL from "@jumbo/JumboRTL/JumboRTL";
 import Div from "@jumbo/shared/Div";
 import {CircularProgress} from "@mui/material";
+import './app.css';
 
 const queryClient = new QueryClient({
     defaultOptions: {

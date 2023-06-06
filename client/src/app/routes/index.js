@@ -1,4 +1,4 @@
-import UserList from "app/pages/userManagement/users/list/UserList";
+import UserList from "app/pages/userManagement/users/UserTabs";
 import React from "react";
 import Home from "../pages/home";
 

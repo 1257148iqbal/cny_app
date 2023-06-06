@@ -1,8 +1,8 @@
-import Button from '@mui/material/Button';
 import { RotateLeft } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { makeStyles } from '@mui/styles';
+import JumboButton from '@jumbo/components/JumboButton';
 const useStyles = makeStyles(theme => ({
   actionButton: {
     margin: 5,
@@ -22,7 +22,7 @@ const ResetButton = props => {
   const classes = useStyles();
   const { onClick } = props;
   return (
-    <Button
+    <JumboButton
       variant="contained"
       color="default"
       size="small"
@@ -30,7 +30,7 @@ const ResetButton = props => {
       className={classes.actionButton}
       onClick={onClick}>
       Reset
-    </Button>
+    </JumboButton>
   );
 };
 

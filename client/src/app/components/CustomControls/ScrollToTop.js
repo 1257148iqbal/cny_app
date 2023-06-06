@@ -1,9 +1,8 @@
 /*
      Title: Scroll To Top
      Description: 
-     Author: Nasir Ahmed
-     Date: 08-November-2021
-     Modified: 08-November-2021
+     Author: Iqbal Hossain
+     Date: 2023-04-10
 */
 
 import { Button } from '@mui/material';

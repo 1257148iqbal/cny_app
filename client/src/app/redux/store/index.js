@@ -8,7 +8,6 @@ const history = createBrowserHistory();
 const routeMiddleware = routerMiddleware(history);
 const bindMiddleware = middleware => {
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
     return composeEnhancers(applyMiddleware(...middleware));
 };
 
