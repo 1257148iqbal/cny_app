@@ -8,7 +8,7 @@ const Home = () => {
           <CardTitle>Welcome to Chalaman NewYork</CardTitle>
         </CardHeader>
         <CardBody>
-          <CardText>Now We are working.... </CardText>
+          <CardText>Now We are working... </CardText>
           <CardText>
             
           </CardText>
