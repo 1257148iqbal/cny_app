@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardBody, CardTitle, CardText, CardLink } from 'reactstrap'
 
-const Home = () => {
+const DashboardScreen = () => {
   return (
     <div>
       <Card>
@@ -18,4 +18,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default DashboardScreen
