@@ -55,7 +55,7 @@ const CardActions = props => {
           <Tag
             key={i}
             className={classnames('cursor-pointer', {
-              'me-50': i < actions.length - 1
+              'me-50': i < actions?.length - 1
             })}
             size={15}
             onClick={() => callAction(action)}

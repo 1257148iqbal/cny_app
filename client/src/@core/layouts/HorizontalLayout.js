@@ -1,37 +1,31 @@
 // ** React Imports
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
-// ** Store & Actions
-import { useSelector, useDispatch } from 'react-redux'
-import { handleMenuHidden, handleContentWidth } from '@store/layout'
-
-// ** Third Party Components
-import classnames from 'classnames'
-import { ArrowUp } from 'react-feather'
-
-// ** Reactstrap Imports
-import { Navbar, NavItem, Button } from 'reactstrap'
-
-// ** Configs
-import themeConfig from '@configs/themeConfig'
-
 // ** Custom Components
 import Customizer from '@components/customizer'
 import ScrollToTop from '@components/scrolltop'
-import NavbarComponent from './components/navbar'
-import FooterComponent from './components/footer'
-import MenuComponent from './components/menu/horizontal-menu'
-
+// ** Configs
+import themeConfig from '@configs/themeConfig'
+import { useFooterType } from '@hooks/useFooterType'
+import { useNavbarColor } from '@hooks/useNavbarColor'
+import { useNavbarType } from '@hooks/useNavbarType'
 // ** Custom Hooks
 import { useRTL } from '@hooks/useRTL'
 import { useSkin } from '@hooks/useSkin'
-import { useNavbarType } from '@hooks/useNavbarType'
-import { useFooterType } from '@hooks/useFooterType'
-import { useNavbarColor } from '@hooks/useNavbarColor'
-
+import { handleContentWidth, handleMenuHidden } from '@store/layout'
 // ** Styles
 import '@styles/base/core/menu/menu-types/horizontal-menu.scss'
+// ** Third Party Components
+import classnames from 'classnames'
+import { useEffect, useState } from 'react'
+import { ArrowUp } from 'react-feather'
+// ** Store & Actions
+import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+// ** Reactstrap Imports
+import { Button, Navbar, NavItem } from 'reactstrap'
+import FooterComponent from './components/footer'
+import MenuComponent from './components/menu/horizontal-menu'
+import NavbarComponent from './components/navbar'
+
 
 const HorizontalLayout = props => {
   // ** Props
@@ -50,11 +44,11 @@ const HorizontalLayout = props => {
 
   // ** Store Vars
   const dispatch = useDispatch()
-  const layoutStore = useSelector(state => state.layout)
+  const layoutStore = useSelector(state => state?.layout)
 
   // ** Vars
-  const contentWidth = layoutStore.contentWidth
-  const isHidden = layoutStore.menuHidden
+  const contentWidth = layoutStore?.contentWidth
+  const isHidden = layoutStore?.menuHidden
 
   // ** Handles Content Width
   const setContentWidth = val => dispatch(handleContentWidth(val))
@@ -163,7 +157,7 @@ const HorizontalLayout = props => {
       ) : null}
 
       {children}
-      {themeConfig.layout.customizer === true ? (
+      {themeConfig?.layout.customizer === true ? (
         <Customizer
           skin={skin}
           setSkin={setSkin}
@@ -175,7 +169,7 @@ const HorizontalLayout = props => {
           setNavbarColor={setNavbarColor}
           isRtl={isRtl}
           setIsRtl={setIsRtl}
-          layout={props.layout}
+          layout={props?.layout}
           setLastLayout={setLastLayout}
           setLayout={props.setLayout}
           isHidden={isHidden}
@@ -195,7 +189,7 @@ const HorizontalLayout = props => {
         {footer ? footer : <FooterComponent footerType={footerType} footerClasses={footerClasses} />}
       </footer>
 
-      {themeConfig.layout.scrollTop === true ? (
+      {themeConfig?.layout.scrollTop === true ? (
         <div className='scroll-to-top'>
           <ScrollToTop showOffset={300} className='scroll-top d-block'>
             <Button className='btn-icon' color='primary'>

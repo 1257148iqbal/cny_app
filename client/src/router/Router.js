@@ -1,23 +1,19 @@
 // ** React Imports
-import { Suspense, lazy, Fragment } from 'react'
-
 // ** Utils
 import { useLayout } from '@hooks/useLayout'
 import { useRouterTransition } from '@hooks/useRouterTransition'
-
+// ** Layouts
+import BlankLayout from '@layouts/BlankLayout'
 // ** Custom Components
 import LayoutWrapper from '@layouts/components/layout-wrapper'
-
+import HorizontalLayout from '@src/layouts/HorizontalLayout'
+import VerticalLayout from '@src/layouts/VerticalLayout'
+import { Fragment, lazy, Suspense } from 'react'
 // ** Router Components
-import { BrowserRouter as AppRouter, Route, Switch, Redirect } from 'react-router-dom'
-
+import { BrowserRouter as AppRouter, Redirect, Route, Switch } from 'react-router-dom'
 // ** Routes & Default Routes
 import { DefaultRoute, Routes } from './routes'
 
-// ** Layouts
-import BlankLayout from '@layouts/BlankLayout'
-import VerticalLayout from '@src/layouts/VerticalLayout'
-import HorizontalLayout from '@src/layouts/HorizontalLayout'
 
 const Router = () => {
   // ** Hooks
@@ -41,7 +37,7 @@ const Router = () => {
     if (Routes) {
       Routes.filter(route => {
         // ** Checks if Route layout or Default layout matches current layout
-        if (route.layout === layout || (route.layout === undefined && DefaultLayout === layout)) {
+        if (route?.layout === layout || (route?.layout === undefined && DefaultLayout === layout)) {
           LayoutRoutes.push(route)
           LayoutPaths.push(route.path)
         }
@@ -141,7 +137,7 @@ const Router = () => {
                         <Fragment>
                           {/* Layout Wrapper to add classes based on route's layout, appLayout and className */}
 
-                          {route.layout === 'BlankLayout' ? (
+                          {route?.layout === 'BlankLayout' ? (
                             <Fragment>
                               <route.component {...props} />
                             </Fragment>

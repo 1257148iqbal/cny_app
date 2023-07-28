@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 export const useFooterType = () => {
   // ** Hooks
   const dispatch = useDispatch()
-  const store = useSelector(state => state.layout)
+  const store = useSelector(state => state?.layout)
 
   const setFooterType = type => {
     dispatch(handleFooterType(type))
@@ -13,6 +13,6 @@ export const useFooterType = () => {
 
   return {
     setFooterType,
-    footerType: store.footerType
+    footerType: store?.footerType
   }
 }

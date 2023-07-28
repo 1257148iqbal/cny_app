@@ -76,14 +76,14 @@ const Autocomplete = props => {
     if (e.keyCode === 38 && activeSuggestion !== 0) {
       setActiveSuggestion(activeSuggestion - 1)
 
-      if (e.target.value.length > -1 && suggestionList !== null && activeSuggestion <= filteredData.length / 2) {
+      if (e.target.value?.length > -1 && suggestionList !== null && activeSuggestion <= filteredData?.length / 2) {
         suggestionList.scrollTop = 0
       }
-    } else if (e.keyCode === 40 && activeSuggestion < filteredData.length - 1) {
+    } else if (e.keyCode === 40 && activeSuggestion < filteredData?.length - 1) {
       // ** User pressed the down arrow
       setActiveSuggestion(activeSuggestion + 1)
 
-      if (e.target.value.length > -1 && suggestionList !== null && activeSuggestion >= filteredData.length / 2) {
+      if (e.target.value?.length > -1 && suggestionList !== null && activeSuggestion >= filteredData?.length / 2) {
         suggestionList.scrollTop = suggestionList.scrollHeight
       }
     } else if (e.keyCode === 27) {
@@ -165,7 +165,7 @@ const Autocomplete = props => {
       })
       .slice(0, suggestionLimit)
     filteredData.push(...sortSingleData)
-    if (sortSingleData.length) {
+    if (sortSingleData?.length) {
       return sortSingleData.map((suggestion, index) => {
         const suggestionURL = suggestion.link !== undefined && suggestion.link !== null ? suggestion.link : null
         if (!customRender) {
@@ -234,7 +234,7 @@ const Autocomplete = props => {
             <li className='suggestion-item suggestion-title-wrapper'>
               <h6 className='suggestion-title'>{suggestion[filterHeaderKey]}</h6>
             </li>
-            {sortData.length ? (
+            {sortData?.length ? (
               renderGroupedSuggestion(sortData)
             ) : (
               <li className='suggestion-item no-result'>

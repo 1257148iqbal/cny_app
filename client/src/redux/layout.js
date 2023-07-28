@@ -1,23 +1,23 @@
 // ** Redux Imports
-import { createSlice } from '@reduxjs/toolkit'
-
 // ** ThemeConfig Import
 import themeConfig from '@configs/themeConfig'
+import { createSlice } from '@reduxjs/toolkit'
+
 
 export const layoutSlice = createSlice({
   name: 'layout',
   initialState: {
-    skin: themeConfig.layout.skin,
-    isRTL: themeConfig.layout.isRTL,
-    layout: themeConfig.layout.type,
-    lastLayout: themeConfig.layout.type,
-    footerType: themeConfig.layout.footer.type,
-    navbarType: themeConfig.layout.navbar.type,
-    menuHidden: themeConfig.layout.menu.isHidden,
-    contentWidth: themeConfig.layout.contentWidth,
-    menuCollapsed: themeConfig.layout.menu.isCollapsed,
-    routerTransition: themeConfig.layout.routerTransition,
-    navbarColor: themeConfig.layout.navbar.backgroundColor
+    skin: themeConfig?.layout?.skin,
+    isRTL: themeConfig?.layout?.isRTL,
+    layout: themeConfig?.layout.type,
+    lastLayout: themeConfig?.layout?.type,
+    footerType: themeConfig?.layout?.footer.type,
+    navbarType: themeConfig?.layout?.navbar.type,
+    menuHidden: themeConfig?.layout?.menu?.isHidden,
+    contentWidth: themeConfig?.layout?.contentWidth,
+    menuCollapsed: themeConfig?.layout?.menu?.isCollapsed,
+    routerTransition: themeConfig?.layout?.routerTransition,
+    navbarColor: themeConfig?.layout?.navbar?.backgroundColor
   },
   reducers: {
     handleRTL: (state, action) => {

@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardBody, CardTitle, CardText, CardLink } from 'reactstrap'
 
 const Home = () => {
+  console.log("first")
   return (
     <div>
       <Card>

@@ -14,7 +14,7 @@ const Routes = [
   },
   {
     path: '/second-page',
-    component: lazy(() => import('../../views/SecondPage'))
+    component: lazy(() => import('../../views/userModule/roles/list/RoleList'))
   },
   {
     path: '/login',
@@ -32,3 +32,4 @@ const Routes = [
 ]
 
 export { DefaultRoute, TemplateTitle, Routes }
+

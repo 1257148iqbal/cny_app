@@ -1,38 +1,32 @@
 // ** React Imports
-import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
-
-// ** Store & Actions
-import { useSelector, useDispatch } from 'react-redux'
-import { handleMenuCollapsed, handleContentWidth, handleMenuHidden } from '@store/layout'
-
-// ** Third Party Components
-import classnames from 'classnames'
-import { ArrowUp } from 'react-feather'
-
-// ** Reactstrap Imports
-import { Navbar, Button } from 'reactstrap'
-
-// ** Configs
-import themeConfig from '@configs/themeConfig'
-
 // ** Custom Components
 import Customizer from '@components/customizer'
 import ScrollToTop from '@components/scrolltop'
-import FooterComponent from './components/footer'
-import NavbarComponent from './components/navbar'
-import SidebarComponent from './components/menu/vertical-menu'
-
+// ** Configs
+import themeConfig from '@configs/themeConfig'
+import { useFooterType } from '@hooks/useFooterType'
+import { useNavbarColor } from '@hooks/useNavbarColor'
+import { useNavbarType } from '@hooks/useNavbarType'
 // ** Custom Hooks
 import { useRTL } from '@hooks/useRTL'
 import { useSkin } from '@hooks/useSkin'
-import { useNavbarType } from '@hooks/useNavbarType'
-import { useFooterType } from '@hooks/useFooterType'
-import { useNavbarColor } from '@hooks/useNavbarColor'
-
+import { handleContentWidth, handleMenuCollapsed, handleMenuHidden } from '@store/layout'
 // ** Styles
 import '@styles/base/core/menu/menu-types/vertical-menu.scss'
 import '@styles/base/core/menu/menu-types/vertical-overlay-menu.scss'
+// ** Third Party Components
+import classnames from 'classnames'
+import { useEffect, useState } from 'react'
+import { ArrowUp } from 'react-feather'
+// ** Store & Actions
+import { useDispatch, useSelector } from 'react-redux'
+import { useLocation } from 'react-router-dom'
+// ** Reactstrap Imports
+import { Button, Navbar } from 'reactstrap'
+import FooterComponent from './components/footer'
+import SidebarComponent from './components/menu/vertical-menu'
+import NavbarComponent from './components/navbar'
+
 
 const VerticalLayout = props => {
   // ** Props
@@ -52,7 +46,7 @@ const VerticalLayout = props => {
 
   // ** Store Vars
   const dispatch = useDispatch()
-  const layoutStore = useSelector(state => state.layout)
+  const layoutStore = useSelector(state => state?.layout)
 
   // ** Update Window Width
   const handleWindowWidth = () => {
@@ -61,9 +55,9 @@ const VerticalLayout = props => {
 
   // ** Vars
   const location = useLocation()
-  const contentWidth = layoutStore.contentWidth
-  const menuCollapsed = layoutStore.menuCollapsed
-  const isHidden = layoutStore.menuHidden
+  const contentWidth = layoutStore?.contentWidth
+  const menuCollapsed = layoutStore?.menuCollapsed
+  const isHidden = layoutStore?.menuHidden
 
   // ** Toggles Menu Collapsed
   const setMenuCollapsed = val => dispatch(handleMenuCollapsed(val))
@@ -179,7 +173,7 @@ const VerticalLayout = props => {
       ></div>
       {/* Vertical Nav Menu Overlay */}
 
-      {themeConfig.layout.customizer === true ? (
+      {themeConfig?.layout.customizer === true ? (
         <Customizer
           skin={skin}
           setSkin={setSkin}
@@ -191,7 +185,7 @@ const VerticalLayout = props => {
           setNavbarColor={setNavbarColor}
           isRtl={isRtl}
           setIsRtl={setIsRtl}
-          layout={props.layout}
+          layout={props?.layout}
           setLayout={props.setLayout}
           setLastLayout={setLastLayout}
           isHidden={isHidden}
@@ -213,7 +207,7 @@ const VerticalLayout = props => {
         {footer ? footer : <FooterComponent footerType={footerType} footerClasses={footerClasses} />}
       </footer>
 
-      {themeConfig.layout.scrollTop === true ? (
+      {themeConfig?.layout.scrollTop === true ? (
         <div className='scroll-to-top'>
           <ScrollToTop showOffset={300} className='scroll-top d-block'>
             <Button className='btn-icon' color='primary'>
