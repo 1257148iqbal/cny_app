@@ -10281,10 +10281,10 @@ react-flatpickr@^3.9.1:
     flatpickr "^4.6.2"
     prop-types "^15.5.10"
 
-react-hook-form@7.18.1:
-  version "7.18.1"
-  resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.18.1.tgz"
-  integrity sha512-T9Lv5nBnLzncEd2p87Bc0+LtNYS+ochURtyvw7Ln474xSGxoUjvVygXa3WPWTc/2lH1sw3VdGtSfNKC35vJd5A==
+react-hook-form@^7.45.2:
+  version "7.45.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.2.tgz#c757f3d5e633ccb186443d57c10fc511df35721a"
+  integrity sha512-9s45OdTaKN+4NSTbXVqeDITd/nwIg++nxJGL8+OD5uf1DxvhsXQ641kaYHk5K28cpIOTYm71O/fYk7rFaygb3A==
 
 react-i18next@^11.13.0:
   version "11.18.6"

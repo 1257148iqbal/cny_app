@@ -18,20 +18,25 @@ import { selectThemeColors } from '../../../../utility/Utils'
 import RoleForm from '../form/RoleForm'
 import { roleTableColumn } from './roleTableColumn'
 
+const initialState = [
+  {name: "Rafiq", details: 'For Details', status: true},
+  {name: "Hasan", details: 'For Details', status: false}
+]
+
 const RoleList = () => {
-  const [isOpenSidebar, toggleRoleSidebar] = useState(false)
+  
+  //#region State
+  const [isOpenSidebar, setIsOpenSideBar] = useState(false)
+const [state] = useState(initialState)
   const [loading] = useState(false)
-  const total = 10
-  const items = [
-    {name: "Rafiq", details: 'For Details', status: true},
-    {name: "Hasan", details: 'For Details', status: false}
-  ]
+  //#endregion
+
   //#region Hooks
 // console.log(items)
   //#endregion
   //#region States
   const [searchTerm] = useState('')
-  const [perPage] = useState(5)
+  const [perPage, setPerPage] = useState(5)
   const [currentPage] = useState(1)
   const [currentStatus, setCurrentStatus] = useState({
     value: '',
@@ -46,7 +51,9 @@ const RoleList = () => {
 
   //#region Events
   const handleFilter = () => {}
-  const handlePerPage = () => {}
+  const handlePerPage = (e) => {
+    setPerPage(e.target.value)
+  }
   const handlePageChange = () => {}
   const handleRowSelected = () => {}
   const handleSort = () => {}
@@ -89,7 +96,7 @@ const RoleList = () => {
           <CardTitle tag="h2">Roles</CardTitle>
         </CardHeader>
         <TableCustomerHeader handlePerPage={handlePerPage} rowsPerPage={perPage} searchTerm={searchTerm}>
-          <PlusIcon onClick={() => toggleRoleSidebar(!isOpenSidebar)} />
+          <PlusIcon onClick={() => setIsOpenSideBar(!isOpenSidebar)} />
         </TableCustomerHeader>
         <CustomDataTable
           onSelectedRowsChange={handleRowSelected}
@@ -98,11 +105,11 @@ const RoleList = () => {
           handleContextAction={handleDeleteByRange}
           columns={roleTableColumn}
           sortIcon={<ChevronDown />}
-          data={items}
+          data={state}
         />
-        <CustomPagination count={Number(Math.ceil(total / perPage))} currentPage={currentPage} onPageChange={handlePageChange} />
+        <CustomPagination count={Number(Math.ceil(state?.length / perPage))} currentPage={currentPage} onPageChange={handlePageChange} />
       </Card>
-      {isOpenSidebar && <RoleForm isOpenSidebar={isOpenSidebar} toggleRoleSidebar={toggleRoleSidebar} selectedRole={undefined}/>}
+      {isOpenSidebar && <RoleForm isOpenSidebar={isOpenSidebar} setIsOpenSideBar={setIsOpenSideBar} selectedRole={undefined}/>}
     </div>
   )
 }

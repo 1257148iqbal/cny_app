@@ -13,8 +13,7 @@ const TableCustomerHeader = ({ children, handlePerPage, rowsPerPage }) => {
           onChange={handlePerPage}
           style={{
             width: '5rem',
-            padding: '0 0.8rem',
-            backgroundPosition: 'calc(100% - 3px) 11px, calc(100% - 20px) 13px, 100% 0'
+            padding: '0 0.8rem'
           }}
         >
           <option value="5">5</option>
